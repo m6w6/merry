@@ -1,6 +1,6 @@
-= merry\\Config
+# merry\\Config
 
-A merry configuration container.
+A merry configuration container. [![Build Status](https://travis-ci.org/m6w6/merry.svg)](https://travis-ci.org/m6w6/merry)
 
 Example:
 ```php
