@@ -1,0 +1,19 @@
+{
+    "name": "m6w6/merry",
+    "type": "library",
+    "description": "Merry Configuration Container",
+    "keywords": ["merry", "config", "configuration", "container"],
+    "homepage": "http://github.com/m6w6/merry",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Michael Wallner",
+            "email": "mike@php.net"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "merry\\Config": "lib"
+        }
+    }
+}
