@@ -1,7 +1,7 @@
 {
     "name": "m6w6/merry",
     "type": "library",
-    "description": "Merry Configuration Container",
+    "description": "Merry container and configuration",
     "keywords": ["merry", "config", "configuration", "container"],
     "homepage": "http://github.com/m6w6/merry",
     "license": "BSD-2-Clause",
@@ -12,8 +12,8 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "merry\\Config": "lib"
+        "psr-4": {
+            "merry\\": "lib/merry"
         }
     }
 }
