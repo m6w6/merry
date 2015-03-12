@@ -68,7 +68,7 @@ class Container implements \ArrayAccess, \RecursiveIterator, \JsonSerializable
 	/**
 	 * Apply one or mor modifier callbacks
 	 * @param mixed $modifier
-	 * @return \merry\Config
+	 * @return \merry\Container
 	 */
 	public function apply($modifier) {
 		if (is_callable($modifier)) {
@@ -111,7 +111,7 @@ class Container implements \ArrayAccess, \RecursiveIterator, \JsonSerializable
 	 * @ignore
 	 */
 	function __set($prop, $value) {
-		if (isset($value) && !is_scalar($value) && !($value instanceof Config)) {
+		if (isset($value) && !is_scalar($value) && !($value instanceof Container)) {
 			$value = new static((array) $value);
 		}
 		if (!strlen($prop)) {
